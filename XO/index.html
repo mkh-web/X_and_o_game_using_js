@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اكس او</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./dist/index.css">
+</head>
+<body>
+    
+    <h1 class="text-center mt-4 text-4xl">play a game X - O </h1>
+ 
+    <ul class="flex justify-evenly items-center mt-5">
+        <li id="name1"> player 1: </li>
+        <li id="name2"> player 2: </li>
+    </ul>
+
+    <div class="flex justify-center items-center">
+    <div class="grid grid-cols-3 grid-rows-3 gap-1 father text-center mt-2">
+        <div class="col-span-1 ">
+            <div class="a space" id="1"><button class="space"></button> </div>
+            <div class="b space" id="2"><button class="space"></button> </div>
+            <div class="c space" id="3"><button class="space"></button> </div>
+        </div>
+
+        <div class="col-span-1">
+            <div class="a space" id="4"><button class="space"></button> </div>
+            <div class="b space" id="5"><button class="space"></button> </div>
+            <div class="c space" id="6"><button class="space"></button> </div>
+        </div>
+
+        <div class="col-span-1">
+            <div class="a space" id="7"><button class="space"></button> </div>
+            <div class="b space" id="8"><button class="space"></button> </div>
+            <div class="c space" id="9"><button class="space"></button> </div>
+        </div>
+
+    </div>
+</div>
+<ul class="flex justify-evenly items-center mt-5">
+    <li>     <button type="reset" class=" bg-slate-400 reset" onclick="game.winner()">who's the winner?</button>    </li>
+    <li> <label for="" id="round">round :  </label></li>
+</ul>
+
+<div class="flex justify-center items-center mt-4">
+         <button type="reset" class=" bg-black reset" onclick="start_game()" style="background-color: black;">start</button>   
+</div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

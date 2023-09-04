@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+}
+
+.continer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.gameborder {
+    display: flex;
+    flex-wrap: wrap; 
+    border: 2px solid black;
+    width: 305px;
+    height: 300px;
+}
+
+.squre {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.circle{
+    color: brown;
+}
+.cross{
+    color: blue;
+}
+
